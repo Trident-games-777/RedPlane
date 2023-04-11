@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Theme.RedPlane" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/la_palma</item>
+        <item name="colorPrimaryVariant">@color/electric_violet</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/brick_red</item>
+        <item name="colorSecondaryVariant">@color/burnt_sienna</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">@color/cod_gray</item>
+    </style>
+
+</resources>

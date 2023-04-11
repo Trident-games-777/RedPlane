@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Red Plane</string>
+    <string name="balance">Balance: %1$d</string>
+    <string name="add_10">+10</string>
+    <string name="add_5">+5</string>
+    <string name="add_1">+1</string>
+    <string name="down_10">-10</string>
+    <string name="down_1">-1</string>
+    <string name="down_5">-5</string>
+    <string name="make_bet">Make Bet</string>
+    <string name="take_off">Take Off</string>
+    <string name="airplane">Airplane</string>
+    <string name="curr_bet">Bet: %1$d</string>
+    <string name="waiting_for_next_round">Waiting for next round</string>
+    <string name="aviation">1555142291649465</string>
+    <string name="hope">c1309a28e6092d27392ce7a71a4cd80d</string>
+    <string name="you_have_spent">You have spent all the credits!</string>
+    <string name="reset_credits">Reset Credits</string>
+</resources>
