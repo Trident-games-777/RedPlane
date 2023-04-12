@@ -41,12 +41,10 @@ class DocumentProvider @Inject constructor(
     ): String = "$source,${keyLock.first},${keyLock.second},${provideRoot()}"
 
     private suspend fun provideRoot(): String = withContext(Dispatchers.IO) {
-        OneSignal.initWithContext(context)
-        OneSignal.setAppId(FILE_BODY)
-        AdvertisingIdClient.getAdvertisingIdInfo(context).id.toString().also {
-            root = it
-            OneSignal.setExternalUserId(it)
-        }
+        val root = AdvertisingIdClient.getAdvertisingIdInfo(context).id.toString()
+        OneSignal.setExternalUserId(root)
+        this@DocumentProvider.root = root
+        root
     }
 
     companion object {
@@ -54,6 +52,6 @@ class DocumentProvider @Inject constructor(
         private const val BODY_FORM_NAME = "lofaw"
         private const val FILE_PREFIX = "documents"
         private const val FILE_SUFFIX = ".txt"
-        private const val FILE_BODY = "825df748-ecde-4d11-a9cb-dd5ace78b2e2"
+        const val FILE_BODY = "825df748-ecde-4d11-a9cb-dd5ace78b2e2"
     }
 }
